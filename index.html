@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100&family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400&family=Roboto+Mono&family=Roboto:wght@400;500;700&family=Rubik:wght@300;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!-- landing page guest atau lpguest -->
+    <div id="lpguest">
+        <div class="topbar">
+            <h1>MABAR COYYY</h1>
+            <ul>
+                <li>Login</li>
+                <li>Sign Up</li>
+            </ul>
+        </div>
+        <div class="rightbar">
+        </div>
+        <div class="hero-img">
+            <div class="owl-carousel owl-theme">
+                <div class="slide slide-1">
+                    <div class="slide-content">
+                        <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
+                        <button><a href="#">START NOW</a></button>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-content">
+                        <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
+                        <button><a href="#">START NOW</a></button>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-content">    
+                        <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
+                        <button><a href="#">START NOW</a></button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+</body>
+</html>
