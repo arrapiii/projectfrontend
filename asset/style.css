@@ -226,3 +226,224 @@ a:hover {
     margin-top: 10px;
     background-color: #5b5756;
 }
+
+#login {
+    width: 100%;
+    background-color: #10101A;
+    margin-top: -20px;
+    display: inline-block;
+}
+
+.img-log {
+    width: 80%;
+}
+
+.img-log h1 {
+    font-family: 'Rubik';
+    position: relative;
+    width: 299px;
+    height: 49px;
+    left: 4%;
+    top: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 49px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.img-log img{
+    height: 100vh;
+    width: 70%;
+    scale: 70%;
+}
+
+span {
+    color: blue;
+}
+
+.form-log {
+    position: absolute;
+    /* float: right; */
+    /* display: flex; */
+    font-family: 'Rubik';
+    margin-left: 50rem;
+    margin-top: -32rem;
+    color: white;
+    scale: 130%;
+}
+
+.form-log h2 {
+    -webkit-text-stroke-color: #5B6268;
+    -webkit-text-stroke-width: 1px;
+}
+
+.form-log h3 {
+    font-family: sans-serif;
+}
+
+.inp-pass {
+    width: 0;
+}
+
+.form-login input {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 23vw;
+    background-color: #333333;
+}
+
+.uil {
+    right: 20px;
+    margin-top: -20px;
+    /* margin-left: -30px; */
+    position: absolute;
+}
+
+.form-loginn p {
+    cursor: pointer;
+    color: white;
+    font-size: 8px;
+    font-weight: lighter;
+    transition: all .3s ease;
+}
+
+.form-loginn p:hover {
+    color: blue;
+}
+
+.form-loginn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-loginn button {
+    cursor: pointer;
+    background-color: #CECECE;
+    position: absolute;
+    right: 3%;
+    border-radius: 20px;
+    width: 5vw;
+    height: 5vh;
+}
+
+.form-loginn input {
+    cursor: pointer;
+    width: 10px;
+    padding-right: 5rem;
+    background-color: transparent;
+}
+#login {
+    width: 100%;
+    background-color: #10101A;
+    margin-top: -20px;
+    display: inline-block;
+}
+
+.img-log {
+    width: 80%;
+}
+
+.img-log h1 {
+    font-family: 'Rubik';
+    position: relative;
+    width: 299px;
+    height: 49px;
+    left: 4%;
+    top: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 49px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.img-log img{
+    height: 100vh;
+    width: 70%;
+    scale: 70%;
+}
+
+span {
+    color: blue;
+}
+
+.form-log {
+    position: absolute;
+    /* float: right; */
+    /* display: flex; */
+    font-family: 'Rubik';
+    margin-left: 50rem;
+    margin-top: -32rem;
+    color: white;
+    scale: 130%;
+}
+
+.form-log h2 {
+    -webkit-text-stroke-color: #5B6268;
+    -webkit-text-stroke-width: 1px;
+}
+
+.form-log h3 {
+    font-family: sans-serif;
+}
+
+.inp-pass {
+    width: 0;
+}
+
+.form-login input {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 23vw;
+    background-color: #333333;
+}
+
+.uil {
+    right: 20px;
+    margin-top: -20px;
+    /* margin-left: -30px; */
+    position: absolute;
+}
+
+.form-loginn p {
+    cursor: pointer;
+    color: white;
+    font-size: 8px;
+    font-weight: lighter;
+    transition: all .3s ease;
+}
+
+.form-loginn p:hover {
+    color: blue;
+}
+
+.form-loginn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-loginn button {
+    cursor: pointer;
+    background-color: #CECECE;
+    position: absolute;
+    right: 3%;
+    border-radius: 20px;
+    width: 5vw;
+    height: 5vh;
+}
+
+.form-loginn input {
+    cursor: pointer;
+    width: 10px;
+    padding-right: 5rem;
+    background-color: transparent;
+}

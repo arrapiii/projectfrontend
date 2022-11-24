@@ -8,6 +8,9 @@
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100&family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400&family=Roboto+Mono&family=Roboto:wght@400;500;700&family=Rubik:wght@300;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -26,8 +29,8 @@
         <div class="topbar">
             <h1>MABAR COYYY</h1>
             <ul>
-                <li>Login</li>
-                <li>Sign Up</li>
+                <li onclick="loginPage()">Login</li>
+                <li onclick="signupPage()">Sign Up</li>
             </ul>
         </div>
         <div class="rightbar">
@@ -37,7 +40,7 @@
                 <div class="slide slide-1">
                     <div class="slide-content">
                         <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
-                        <button><a href="#">START NOW</a></button>
+                        <button><a href="">START NOW</a></button>
                     </div>
                 </div>
                 <div class="slide slide-2">
@@ -54,6 +57,67 @@
                 </div>
             </div>    
         </div>
+    </div>
+
+    <!-- login page -->
+    <div id="login" style="display: none;">
+        <div class="img-log">
+            <h1><span>MABAR</span> COYYY</h1>
+            <img src="img/Bennett_Art_-_Genshin_Impact_Art_Gallery-removebg-preview.png" alt="">
+        </div>
+        <div class="form-log">
+            <h2>Welcome to <span>MABAR</span> COYY</h2>
+            <h3>Login</h3>
+            <br>
+            <div class="form-login">
+                <label for="">Email</label>
+                <br>
+                <input type="email">
+                <br>
+                <br>
+                <label for="">Password</label>
+                <br>
+                <div class="inp-pass">
+                    <input type="password" class="password">
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+                <br>
+                <div class="form-loginn">
+                    <p>Forget your password?</p>
+                    <button>Log In</button>
+                </div>
+            </div>
+    </div>
+
+    <!-- signup page -->
+    <div id="signup" style="display: block;">
+        <div class="img-log">
+            <h1><span>MABAR</span> COYYY</h1>
+            <img src="img/Bennett_Art_-_Genshin_Impact_Art_Gallery-removebg-preview.png" alt="">
+        </div>
+        <div class="form-log">
+            <h2>Welcome to <span>MABAR</span> COYY</h2>
+            <h3>SIGNUP</h3>
+            <br>
+            <div class="form-login">
+                <label for="">Email</label>
+                <br>
+                <input type="email">
+                <br>
+                <br>
+                <label for="">Password</label>
+                <br>
+                <div class="inp-pass">
+                    <input type="password" class="password">
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+                <br>
+                <div class="form-loginn">
+                    <input type="checkbox"><p>After checking, you are indicating that you have read and <br> acknowledge the MABAR COYYY Platform Terms of Service
+                    </p>
+                    <button>Log In</button>
+                </div>
+            </div>
     </div>
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,6 +137,44 @@
                 autoplayHoverPause:true
             });
         });
+    </script>
+    <script>
+        function loginPage() {
+        
+        document.getElementById('lpguest').style.display = "none";
+        document.getElementById('login').style.display = "block";
+        }
+
+        function signupPage() {
+        
+        document.getElementById('lpguest').style.display = "none";
+        document.getElementById('signup').style.display = "block";
+        }
+
+
+        pwShowHide = document.querySelectorAll(".showHidePw"),
+        pwFields = document.querySelectorAll(".password")
+
+        pwShowHide.forEach(eyeIcon =>{
+        eyeIcon.addEventListener("click", ()=>{
+            pwFields.forEach(pwField =>{
+                if(pwField.type ==="password"){
+                    pwField.type = "text";
+
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye-slash", "uil-eye");
+                    })
+                }else{
+                    pwField.type = "password";
+
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye", "uil-eye-slash");
+                    })
+                }
+            }) 
+        })
+    })
+
     </script>
 </body>
 </html>
